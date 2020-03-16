@@ -9,7 +9,7 @@ Executer
 Status
 Description
 
-История изменений Status-а отдельной таблицей
+StatusChangeHistory
 Id
 TaskId
 OldStatus
@@ -19,7 +19,7 @@ Executer
 DateOfChange
 
 
-Периодическая задача - еженедельная отчетность
+PeriodicTask - everyWeek's task, for example- report of change statuses and executed work
 PeriodicTask : Task
 
 
