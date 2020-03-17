@@ -1,13 +1,13 @@
-﻿using System;
+﻿using ItUniver.Task.Entities;
+using ItUniver.Task.Enums;
+using ItUniver.Task.Stores;
+using It_univer.Tasks.Web.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using It_univer.Tasks.Web.Models;
-using Microsoft.Extensions.Logging;
-using ItUniver.Task.Stores;
-using ItUniver.Task.Entities;
 
 namespace It_univer.Tasks.Web.Controllers
 {
@@ -17,34 +17,82 @@ namespace It_univer.Tasks.Web.Controllers
 
         private readonly ITaskStore taskStore;
 
+        /// <summary>
+        /// Конструктор контроллера
+        /// </summary>
+        /// <param name="logger"></param>
+        /// <param name="taskStore"></param>
         public HomeController(ILogger<HomeController> logger, ITaskStore taskStore)
         {
             this.logger = logger;
             this.taskStore = taskStore;
         }
 
+        /// <summary>
+        /// Добавление таска
+        /// </summary>
+        /// <returns></returns>
         public IActionResult Index()
         {
-            var a = taskStore.Save(new TaskBase { Subject = "Hello", Description = "Hi" });
+            var result = taskStore.Save(new TaskBase {Id=10, Subject = "Hello", Description = "Hi", CreationDate=DateTime.Now, Status=TaskStatus.Done });
+            ViewData["Message"] = $"Добавлена новая задача: {result.ToString()}";
+            ViewData["List"] = "Список задач: ";
+            foreach (var task in taskStore.GetAllTasks())
+            {
+                ViewData["List"] += $"{task.ToString()}\n";
+            }
             return View();
         }
 
+        /// <summary>
+        /// Поиск таска
+        /// </summary>
+        /// <returns></returns>
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
-
+            var result = taskStore.FirstOrDefault(taskStore.ConstTask[0]);
+            ViewData["Message"] = $"Найденная задача: {result.ToString()}";
+            ViewData["List"] = "Список задач: ";
+            foreach (var task in taskStore.GetAllTasks())
+            {
+                ViewData["List"] += $"{task.ToString()}\n";
+            }
             return View();
         }
 
+        /// <summary>
+        /// Изменение таска
+        /// </summary>
+        /// <returns></returns>
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
-
+            var changedTask = taskStore.ConstTask[1];
+            changedTask.Description = "Данная задача изменена по требованию Заказчика";
+            changedTask.Status = TaskStatus.Done;
+            var result = taskStore.Change(changedTask);
+            ViewData["Message"] = $"Измененная задача: {result.ToString()}";
+            ViewData["List"] = "Список задач: ";
+            foreach (var task in taskStore.GetAllTasks())
+            {
+                ViewData["List"] += $"{task.ToString()}\n";
+            }
             return View();
         }
 
+        /// <summary>
+        /// Удаление таска
+        /// </summary>
+        /// <returns></returns>
         public IActionResult Privacy()
         {
+            ViewData["Message"] = taskStore.Remove(taskStore.ConstTask[2]) 
+            ? $"Задача [{taskStore.ConstTask[2].ToString()}] удалена" 
+            : $"Что-то пошло не так... (";
+            ViewData["List"] = "Список задач: ";
+            foreach (var task in taskStore.GetAllTasks())
+            {
+                ViewData["List"] += $"{task.ToString()}\n";
+            }
             return View();
         }
 

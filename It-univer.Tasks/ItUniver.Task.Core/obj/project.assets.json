@@ -179,24 +179,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Шевнин\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\univer\\it_univer\\It-univer.Tasks\\ItUniver.Task.Core\\ItUniver.Task.Core.csproj",
+      "projectUniqueName": "D:\\Projects\\univer\\it_univer\\It-univer.Tasks\\ItUniver.Task.Core\\ItUniver.Task.Core.csproj",
       "projectName": "ItUniver.Task.Core",
-      "projectPath": "C:\\univer\\it_univer\\It-univer.Tasks\\ItUniver.Task.Core\\ItUniver.Task.Core.csproj",
-      "packagesPath": "C:\\Users\\Шевнин\\.nuget\\packages\\",
-      "outputPath": "C:\\univer\\it_univer\\It-univer.Tasks\\ItUniver.Task.Core\\obj\\",
+      "projectPath": "D:\\Projects\\univer\\it_univer\\It-univer.Tasks\\ItUniver.Task.Core\\ItUniver.Task.Core.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "D:\\Projects\\univer\\it_univer\\It-univer.Tasks\\ItUniver.Task.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Шевнин\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
@@ -227,10 +228,16 @@
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -27,6 +27,11 @@ namespace ItUniver.Task.Entities
         /// </summary>
         public TaskStatus Status { get; set; }
 
+        /// <summary>
+        /// Перегрузка метода ToString Формирует строку из Задачи
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString() => $"Ай-ди: {Id}; \n Тема: {Subject}; \n Описание: {Description}; \n Дата создания: {CreationDate}; \n Статус: {Status}. \n";
 
     }
 }
