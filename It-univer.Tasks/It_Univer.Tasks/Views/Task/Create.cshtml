@@ -1,0 +1,38 @@
+﻿@using It_Univer.Tasks.Core.Entities
+@model TaskBase
+@using (Html.BeginForm())
+{
+    <head>
+
+    </head>
+    <body>
+        <div id="modUser" class="modal fade">
+            <div id="dialogUser" class="modal-dialog"></div>
+        </div>
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4> Создание новой задачи: </h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <div class="col-md-8">
+                        <label class="col-md-2 control-label">Subject:</label>
+                        @Html.TextAreaFor(model => model.Subject, 2, 100, null)
+                    </div>
+                    <br />
+                    <div class="col-md-8">
+                        <label class="col-md-2 control-label">Description:</label>
+                        @Html.TextAreaFor(model => model.Description, 5, 100, null)
+                    </div>
+                </div>
+            </div>
+            @Html.HiddenFor(model => model.Id)
+            @Html.HiddenFor(model => model.CreationDate)
+            @Html.HiddenFor(model => model.Status)
+            <div class="modal-footer">
+                <input type="submit" class="btn btn-primary" value="Create" />
+            </div>
+        </div>
+    </body>
+}
