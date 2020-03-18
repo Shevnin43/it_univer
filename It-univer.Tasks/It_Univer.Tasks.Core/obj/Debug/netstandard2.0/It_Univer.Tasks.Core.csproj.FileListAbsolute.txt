@@ -1,0 +1,8 @@
+D:\222\It_Univer.Tasks.Core\bin\Debug\netstandard2.0\It_Univer.Tasks.Core.deps.json
+D:\222\It_Univer.Tasks.Core\bin\Debug\netstandard2.0\It_Univer.Tasks.Core.dll
+D:\222\It_Univer.Tasks.Core\bin\Debug\netstandard2.0\It_Univer.Tasks.Core.pdb
+D:\222\It_Univer.Tasks.Core\obj\Debug\netstandard2.0\It_Univer.Tasks.Core.csprojAssemblyReference.cache
+D:\222\It_Univer.Tasks.Core\obj\Debug\netstandard2.0\It_Univer.Tasks.Core.AssemblyInfoInputs.cache
+D:\222\It_Univer.Tasks.Core\obj\Debug\netstandard2.0\It_Univer.Tasks.Core.AssemblyInfo.cs
+D:\222\It_Univer.Tasks.Core\obj\Debug\netstandard2.0\It_Univer.Tasks.Core.dll
+D:\222\It_Univer.Tasks.Core\obj\Debug\netstandard2.0\It_Univer.Tasks.Core.pdb

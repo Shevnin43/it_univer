@@ -1,0 +1,65 @@
+﻿@using It_Univer.Tasks.Core.Entities
+
+@model ICollection<TaskBase>
+<head>
+
+</head>
+<body>
+        <div id="modUser" class="modal fade">
+            <div id="dialogUser" class="modal-dialog"></div>
+        </div>
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4> Список задач (всего @Model.Count задач): </h4>
+            </div>
+            <div class="modal-body">
+                @if (Model != null && Model.Count() > 0)
+                {
+                    <table width="98%" align="center" border="0" id="mytable" class="tablesorter">
+                        <thead>
+                            <tr>
+                                <th align="center">Id</th>
+                                <th align="center">Subject</th>
+                                <th align="center">Description</th>
+                                <th align="center">CreateDate</th>
+                                <th align="center">Status</th>
+                                <th align="center">Remove</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (TaskBase task in Model)
+                            {
+                                <tr>
+                                    <td>@task.Id</td>
+                                    <td>@task.Subject</td>
+                                    <td>@task.Description</td>
+                                    <td>@task.CreationDate</td>
+                                    <td>@task.Status</td>
+                                    <td>@Html.ActionLink("Remove", "Remove", "Task", new { id = task.Id }, null)</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                }
+                else
+                {
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4> На данный момент задачи отсутствуют. </h4>
+                        </div>
+                    </div>
+                }
+                <br />
+                <div class="modal-footer">
+                    <a href="@Url.Action("Create", "Task")" type="button" class="btn btn-primary">Create</a>
+                </div>
+            </div>
+        </div>
+
+
+</body>
+
+
+
+
