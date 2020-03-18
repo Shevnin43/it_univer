@@ -22,7 +22,7 @@ namespace ItUniver.Task.Stores
         /// </summary>
         /// <param name="task"></param>
         /// <returns></returns>
-        TaskBase FirstOrDefault(TaskBase task);
+        TaskBase FirstOrDefault(long id);
 
         /// <summary>
         /// Обновление задачи 
@@ -36,12 +36,14 @@ namespace ItUniver.Task.Stores
         /// </summary>
         /// <param name="task"></param>
         /// <returns></returns>
-        bool Remove(TaskBase task);
+        bool Remove(long id);
 
         /// <summary>
         /// Получение полного списка задач
         /// </summary>
         /// <returns></returns>
         List<TaskBase> GetAllTasks();
+
+        ICollection<TaskBase> GetAll();
     }
 }

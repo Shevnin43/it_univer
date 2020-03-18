@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using ItUniver.Task.Stores;
+﻿using ItUniver.Task.Stores;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
 namespace It_univer.Tasks.Web
 {
@@ -32,7 +27,8 @@ namespace It_univer.Tasks.Web
             });
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
-            services.AddSingleton<ITaskStore, TaskMemoryStore>();
+            services.AddControllersWithViews();
+            services.AddTaskCoreServices();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)

@@ -53,9 +53,9 @@ namespace ItUniver.Task.Stores
         /// </summary>
         /// <param name="task"></param>
         /// <returns></returns>
-        public TaskBase FirstOrDefault(TaskBase task)
+        public TaskBase FirstOrDefault(long id)
         {
-            return tasks?.FirstOrDefault(item => item.Id == task.Id && item.Subject == task.Subject && item.Description == task.Description && item.Status == item.Status && item.CreationDate==task.CreationDate);
+            return tasks?.FirstOrDefault(item => item.Id == id);
         }
 
         /// <summary>
@@ -82,9 +82,9 @@ namespace ItUniver.Task.Stores
         /// </summary>
         /// <param name="task"></param>
         /// <returns></returns>
-        public bool Remove(TaskBase task)
+        public bool Remove(long id)
         {
-            var saved = tasks.FirstOrDefault(item => item.Id == task.Id && item.Subject == task.Subject && item.Description == task.Description && item.Status == item.Status && item.CreationDate == task.CreationDate);
+            var saved = tasks.FirstOrDefault(item => item.Id == id);
             return (saved == null)?false:tasks.Remove(saved);
         }
 
@@ -93,5 +93,9 @@ namespace ItUniver.Task.Stores
         /// </summary>
         /// <returns></returns>
         public List<TaskBase> GetAllTasks() => tasks;
+        public ICollection<TaskBase> GetAll()
+        {
+            return tasks;//.Select(task=>task.Copy()).ToList();
+        }
     }
 }

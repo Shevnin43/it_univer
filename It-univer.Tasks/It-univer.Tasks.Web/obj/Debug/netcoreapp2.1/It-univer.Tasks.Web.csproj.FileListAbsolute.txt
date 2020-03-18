@@ -68,3 +68,4 @@ D:\Projects\univer\it_univer\It-univer.Tasks\It-univer.Tasks.Web\obj\Debug\netco
 D:\Projects\univer\it_univer\It-univer.Tasks\It-univer.Tasks.Web\obj\Debug\netcoreapp2.1\It-univer.Tasks.Web.csproj.CopyComplete
 D:\Projects\univer\it_univer\It-univer.Tasks\It-univer.Tasks.Web\obj\Debug\netcoreapp2.1\It-univer.Tasks.Web.dll
 D:\Projects\univer\it_univer\It-univer.Tasks\It-univer.Tasks.Web\obj\Debug\netcoreapp2.1\It-univer.Tasks.Web.pdb
+C:\univer\it_univer\It-univer.Tasks\It-univer.Tasks.Web\obj\Debug\netcoreapp2.1\Razor\Views\Task\Index.g.cshtml.cs

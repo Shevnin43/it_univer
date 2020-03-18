@@ -50,7 +50,7 @@ namespace It_univer.Tasks.Web.Controllers
         /// <returns></returns>
         public IActionResult About()
         {
-            var result = taskStore.FirstOrDefault(taskStore.ConstTask[0]);
+            var result = taskStore.FirstOrDefault(taskStore.ConstTask[0].Id);
             ViewData["Message"] = $"Найденная задача: {result.ToString()}";
             ViewData["List"] = "Список задач: ";
             foreach (var task in taskStore.GetAllTasks())
@@ -85,7 +85,7 @@ namespace It_univer.Tasks.Web.Controllers
         /// <returns></returns>
         public IActionResult Privacy()
         {
-            ViewData["Message"] = taskStore.Remove(taskStore.ConstTask[2]) 
+            ViewData["Message"] = taskStore.Remove(taskStore.ConstTask[2].Id) 
             ? $"Задача [{taskStore.ConstTask[2].ToString()}] удалена" 
             : $"Что-то пошло не так... (";
             ViewData["List"] = "Список задач: ";
