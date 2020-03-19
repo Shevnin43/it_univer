@@ -186,11 +186,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\222\\It_Univer\\It_Univer.Tasks.Core\\It_Univer.Tasks.Core.csproj",
+      "projectUniqueName": "D:\\Projects\\ItUniver\\it_univer\\It-univer.Tasks\\It_Univer.Tasks.Core\\It_Univer.Tasks.Core.csproj",
       "projectName": "It_Univer.Tasks.Core",
-      "projectPath": "D:\\222\\It_Univer\\It_Univer.Tasks.Core\\It_Univer.Tasks.Core.csproj",
+      "projectPath": "D:\\Projects\\ItUniver\\it_univer\\It-univer.Tasks\\It_Univer.Tasks.Core\\It_Univer.Tasks.Core.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "D:\\222\\It_Univer\\It_Univer.Tasks.Core\\obj\\",
+      "outputPath": "D:\\Projects\\ItUniver\\it_univer\\It-univer.Tasks\\It_Univer.Tasks.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
