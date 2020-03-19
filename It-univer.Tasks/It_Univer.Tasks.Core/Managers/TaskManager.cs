@@ -36,5 +36,14 @@ namespace It_Univer.Tasks.Managers
         {
             return taskStore.Remove(id);
         }
+
+        public TaskBase GetTask(long id)
+        {
+            return taskStore.FirstOrDefault(id);
+        }
+        public void Change(TaskBase task)
+        {
+            taskStore.Change(task);
+        }
     }
 }

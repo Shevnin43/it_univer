@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\222\\It_Univer\\It_Univer.Tasks\\It_Univer.Tasks.Web.csproj": {}
+    "D:\\Projects\\ItUniver\\it_univer\\It-univer.Tasks\\It_Univer.Tasks\\It_Univer.Tasks.Web.csproj": {}
   },
   "projects": {
-    "D:\\222\\It_Univer\\It_Univer.Tasks.Core\\It_Univer.Tasks.Core.csproj": {
+    "D:\\Projects\\ItUniver\\it_univer\\It-univer.Tasks\\It_Univer.Tasks.Core\\It_Univer.Tasks.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\222\\It_Univer\\It_Univer.Tasks.Core\\It_Univer.Tasks.Core.csproj",
+        "projectUniqueName": "D:\\Projects\\ItUniver\\it_univer\\It-univer.Tasks\\It_Univer.Tasks.Core\\It_Univer.Tasks.Core.csproj",
         "projectName": "It_Univer.Tasks.Core",
-        "projectPath": "D:\\222\\It_Univer\\It_Univer.Tasks.Core\\It_Univer.Tasks.Core.csproj",
+        "projectPath": "D:\\Projects\\ItUniver\\it_univer\\It-univer.Tasks\\It_Univer.Tasks.Core\\It_Univer.Tasks.Core.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\222\\It_Univer\\It_Univer.Tasks.Core\\obj\\",
+        "outputPath": "D:\\Projects\\ItUniver\\it_univer\\It-univer.Tasks\\It_Univer.Tasks.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -63,14 +63,14 @@
         }
       }
     },
-    "D:\\222\\It_Univer\\It_Univer.Tasks\\It_Univer.Tasks.Web.csproj": {
+    "D:\\Projects\\ItUniver\\it_univer\\It-univer.Tasks\\It_Univer.Tasks\\It_Univer.Tasks.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\222\\It_Univer\\It_Univer.Tasks\\It_Univer.Tasks.Web.csproj",
+        "projectUniqueName": "D:\\Projects\\ItUniver\\it_univer\\It-univer.Tasks\\It_Univer.Tasks\\It_Univer.Tasks.Web.csproj",
         "projectName": "It_Univer.Tasks.Web",
-        "projectPath": "D:\\222\\It_Univer\\It_Univer.Tasks\\It_Univer.Tasks.Web.csproj",
+        "projectPath": "D:\\Projects\\ItUniver\\it_univer\\It-univer.Tasks\\It_Univer.Tasks\\It_Univer.Tasks.Web.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\222\\It_Univer\\It_Univer.Tasks\\obj\\",
+        "outputPath": "D:\\Projects\\ItUniver\\it_univer\\It-univer.Tasks\\It_Univer.Tasks\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -90,8 +90,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\222\\It_Univer\\It_Univer.Tasks.Core\\It_Univer.Tasks.Core.csproj": {
-                "projectPath": "D:\\222\\It_Univer\\It_Univer.Tasks.Core\\It_Univer.Tasks.Core.csproj"
+              "D:\\Projects\\ItUniver\\it_univer\\It-univer.Tasks\\It_Univer.Tasks.Core\\It_Univer.Tasks.Core.csproj": {
+                "projectPath": "D:\\Projects\\ItUniver\\it_univer\\It-univer.Tasks\\It_Univer.Tasks.Core\\It_Univer.Tasks.Core.csproj"
               }
             }
           }
@@ -105,6 +105,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.1.1, )"
