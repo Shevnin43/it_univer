@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using It_Univer.Tasks.Web;
+using ITUniversity.AspNetCore.MVC;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -25,9 +26,17 @@ namespace It_Univer.Tasks
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllersWithViews().AddRazorRuntimeCompilation();
+            services.AddControllersWithViews().AddNewtonsoftJson(options =>
+            {
+                // Use the default property (Pascal) casing
+                //options.SerializerSettings.ContractResolver = new DefaultContractResolver();
+
+                // Configure a custom converter
+                //options.SerializerOptions.Converters.Add(new MyCustomJsonConverter());
+            }).AddRazorRuntimeCompilation();
             services.AddAutoMapper(typeof(Startup).Assembly);
-            services.AddTaskCoreServices();
+            services.AddTaskCoreServices().AddTaskApplicationServices();
+            services.AddCore();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
