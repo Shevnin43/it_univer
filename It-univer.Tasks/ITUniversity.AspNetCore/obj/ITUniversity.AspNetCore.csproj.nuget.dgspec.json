@@ -1,0 +1,135 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\univer\\it_univer\\It-univer.Tasks\\ITUniversity.AspNetCore\\ITUniversity.AspNetCore.csproj": {}
+  },
+  "projects": {
+    "C:\\univer\\it_univer\\It-univer.Tasks\\ITUniversity.AspNetCore\\ITUniversity.AspNetCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\univer\\it_univer\\It-univer.Tasks\\ITUniversity.AspNetCore\\ITUniversity.AspNetCore.csproj",
+        "projectName": "ITUniversity.AspNetCore",
+        "projectPath": "C:\\univer\\it_univer\\It-univer.Tasks\\ITUniversity.AspNetCore\\ITUniversity.AspNetCore.csproj",
+        "packagesPath": "C:\\Users\\Шевнин\\.nuget\\packages\\",
+        "outputPath": "C:\\univer\\it_univer\\It-univer.Tasks\\ITUniversity.AspNetCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Шевнин\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\univer\\it_univer\\It-univer.Tasks\\ItUniversity\\ItUniversity.csproj": {
+                "projectPath": "C:\\univer\\it_univer\\It-univer.Tasks\\ItUniversity\\ItUniversity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\univer\\it_univer\\It-univer.Tasks\\ItUniversity\\ItUniversity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\univer\\it_univer\\It-univer.Tasks\\ItUniversity\\ItUniversity.csproj",
+        "projectName": "ItUniversity",
+        "projectPath": "C:\\univer\\it_univer\\It-univer.Tasks\\ItUniversity\\ItUniversity.csproj",
+        "packagesPath": "C:\\Users\\Шевнин\\.nuget\\packages\\",
+        "outputPath": "C:\\univer\\it_univer\\It-univer.Tasks\\ItUniversity\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Шевнин\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Microsoft.AspNetCore.Razor.Design/2.1.2": {
+        "type": "package",
+        "build": {
+          "build/netstandard2.0/Microsoft.AspNetCore.Razor.Design.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Microsoft.AspNetCore.Razor.Design.props": {}
+        }
+      },
+      "ItUniversity/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/ItUniversity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ItUniversity.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.AspNetCore.Razor.Design/2.1.2": {
+      "sha512": "fe1+dpy+eM4IX1zodsvkihO1Spuj0NecfStWzvkYoMo7/ziOsqSv4vFK36ZpBfHa4gpdCEwaU46EPzdq+ZDYhQ==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.razor.design/2.1.2",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/netstandard2.0/Microsoft.AspNetCore.Razor.Design.CodeGeneration.targets",
+        "build/netstandard2.0/Microsoft.AspNetCore.Razor.Design.props",
+        "buildMultiTargeting/Microsoft.AspNetCore.Razor.Design.props",
+        "microsoft.aspnetcore.razor.design.2.1.2.nupkg.sha512",
+        "microsoft.aspnetcore.razor.design.nuspec",
+        "tasks/net46/Microsoft.AspNetCore.Razor.Tasks.dll",
+        "tasks/netstandard2.0/Microsoft.AspNetCore.Razor.Tasks.dll",
+        "tools/Microsoft.AspNetCore.Razor.Language.dll",
+        "tools/Microsoft.CodeAnalysis.CSharp.dll",
+        "tools/Microsoft.CodeAnalysis.Razor.dll",
+        "tools/Microsoft.CodeAnalysis.dll",
+        "tools/Newtonsoft.Json.dll",
+        "tools/runtimes/unix/lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
+        "tools/runtimes/win/lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
+        "tools/rzc.deps.json",
+        "tools/rzc.dll",
+        "tools/rzc.runtimeconfig.json"
+      ]
+    },
+    "ItUniversity/1.0.0": {
+      "type": "project",
+      "path": "../ItUniversity/ItUniversity.csproj",
+      "msbuildProject": "../ItUniversity/ItUniversity.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "ItUniversity >= 1.0.0",
+      "Microsoft.AspNetCore.Razor.Design >= 2.1.2"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Шевнин\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\univer\\it_univer\\It-univer.Tasks\\ITUniversity.AspNetCore\\ITUniversity.AspNetCore.csproj",
+      "projectName": "ITUniversity.AspNetCore",
+      "projectPath": "C:\\univer\\it_univer\\It-univer.Tasks\\ITUniversity.AspNetCore\\ITUniversity.AspNetCore.csproj",
+      "packagesPath": "C:\\Users\\Шевнин\\.nuget\\packages\\",
+      "outputPath": "C:\\univer\\it_univer\\It-univer.Tasks\\ITUniversity.AspNetCore\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Шевнин\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "C:\\univer\\it_univer\\It-univer.Tasks\\ItUniversity\\ItUniversity.csproj": {
+              "projectPath": "C:\\univer\\it_univer\\It-univer.Tasks\\ItUniversity\\ItUniversity.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Razor.Design": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[2.1.2, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
