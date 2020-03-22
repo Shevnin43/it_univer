@@ -41,9 +41,9 @@ namespace It_Univer.Tasks.Managers
         {
             return taskStore.FirstOrDefault(id);
         }
-        public void Change(TaskBase task)
+        public TaskBase Change(TaskBase task)
         {
-            taskStore.Change(task);
+            return taskStore.Change(task);
         }
     }
 }

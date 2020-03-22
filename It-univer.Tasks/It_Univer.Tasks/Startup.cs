@@ -35,7 +35,8 @@ namespace It_Univer.Tasks
                 //options.SerializerOptions.Converters.Add(new MyCustomJsonConverter());
             }).AddRazorRuntimeCompilation();
             services.AddAutoMapper(typeof(Startup).Assembly);
-            services.AddTaskCoreServices().AddTaskApplicationServices();
+            services.AddTaskCoreServices();
+            services.AddTaskApplicationServices();
             services.AddCore();
         }
 

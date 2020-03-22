@@ -49,7 +49,6 @@ namespace It_Univer.Tasks.Web.Controllers
             return Json(new { success = true });
         }
         
-        [HttpGet]
         public IActionResult Details(long id)
         {
              return View(taskManager.GetTask(id));
@@ -65,8 +64,8 @@ namespace It_Univer.Tasks.Web.Controllers
         public IActionResult Update(TaskCreateModel task)
         {
             var saved = taskManager.GetTask(task.Id);
-            saved = mapper.Map<TaskBase>(task);
-            taskManager.Change(saved);
+            var newTask = mapper.Map<TaskBase>(saved);
+            taskManager.Change(newTask);
             return RedirectToAction("Index");
         }
 

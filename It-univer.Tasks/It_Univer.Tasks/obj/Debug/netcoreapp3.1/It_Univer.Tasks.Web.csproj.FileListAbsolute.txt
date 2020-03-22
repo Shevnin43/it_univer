@@ -1032,3 +1032,12 @@ C:\univer\it_univer\It-univer.Tasks\It_Univer.Tasks\bin\Debug\netcoreapp3.1\ITUn
 C:\univer\it_univer\It-univer.Tasks\It_Univer.Tasks\bin\Debug\netcoreapp3.1\ITUniversity.Task.API.dll
 C:\univer\it_univer\It-univer.Tasks\It_Univer.Tasks\bin\Debug\netcoreapp3.1\ITUniversity.AspNetCore.pdb
 C:\univer\it_univer\It-univer.Tasks\It_Univer.Tasks\bin\Debug\netcoreapp3.1\ITUniversity.Task.API.pdb
+D:\Projects\ItUniver\it_univer\It-univer.Tasks\It_Univer.Tasks\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+D:\Projects\ItUniver\it_univer\It-univer.Tasks\It_Univer.Tasks\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\Projects\ItUniver\it_univer\It-univer.Tasks\It_Univer.Tasks\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+D:\Projects\ItUniver\it_univer\It-univer.Tasks\It_Univer.Tasks\bin\Debug\netcoreapp3.1\ITUniversity.AspNetCore.dll
+D:\Projects\ItUniver\it_univer\It-univer.Tasks\It_Univer.Tasks\bin\Debug\netcoreapp3.1\ItUniversity.dll
+D:\Projects\ItUniver\it_univer\It-univer.Tasks\It_Univer.Tasks\bin\Debug\netcoreapp3.1\ITUniversity.Task.API.dll
+D:\Projects\ItUniver\it_univer\It-univer.Tasks\It_Univer.Tasks\bin\Debug\netcoreapp3.1\ITUniversity.AspNetCore.pdb
+D:\Projects\ItUniver\it_univer\It-univer.Tasks\It_Univer.Tasks\bin\Debug\netcoreapp3.1\ITUniversity.Task.API.pdb
+D:\Projects\ItUniver\it_univer\It-univer.Tasks\It_Univer.Tasks\bin\Debug\netcoreapp3.1\ItUniversity.pdb

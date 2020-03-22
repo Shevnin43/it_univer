@@ -1,29 +1,35 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+
 using ItUniversity.Application.Services;
 
 namespace ITUniversity.Task.API.Services
 {
-        public interface ITaskAppService : IApplicationService
+    public interface ITaskAppService : IApplicationService
+    {
+        ApiCreateModel ApiCreate(ApiCreateModel task);
+        bool ApiRemove(long id);
+        ApiCreateModel ApiUpdate(ApiCreateModel task);
+        List<ApiCreateModel> ApiAllTasks();
+        ApiCreateModel ApiDetails(long id);
+
+    }
+
+        public class ApiCreateModel
         {
-            void Test();
+            public static ApiCreateModel New
+            {
+                get { return new ApiCreateModel(); }
+            }
 
-            string GetTest();
+            [Required(ErrorMessage = "Заполните поле:")]
+            [DisplayName("Тема")] 
+            public string Subject { get; set; }
 
-            void TestString(string str);
+            [DisplayName("Описание")]
+            public string Description { get; set; }
 
-            string GetTestString(string str);
-
-            void Class(Test test);
-
-            Test GetClass(Test test);
-        }
-
-        public class Test
-        {
-            public string Name { get; set; }
-
-            public long Age { get; set; }
+            public long Id { get; set; }
         }
 }

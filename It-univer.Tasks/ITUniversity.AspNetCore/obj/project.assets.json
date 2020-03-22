@@ -64,24 +64,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Шевнин\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\univer\\it_univer\\It-univer.Tasks\\ITUniversity.AspNetCore\\ITUniversity.AspNetCore.csproj",
+      "projectUniqueName": "D:\\Projects\\ItUniver\\it_univer\\It-univer.Tasks\\ITUniversity.AspNetCore\\ITUniversity.AspNetCore.csproj",
       "projectName": "ITUniversity.AspNetCore",
-      "projectPath": "C:\\univer\\it_univer\\It-univer.Tasks\\ITUniversity.AspNetCore\\ITUniversity.AspNetCore.csproj",
-      "packagesPath": "C:\\Users\\Шевнин\\.nuget\\packages\\",
-      "outputPath": "C:\\univer\\it_univer\\It-univer.Tasks\\ITUniversity.AspNetCore\\obj\\",
+      "projectPath": "D:\\Projects\\ItUniver\\it_univer\\It-univer.Tasks\\ITUniversity.AspNetCore\\ITUniversity.AspNetCore.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "D:\\Projects\\ItUniver\\it_univer\\It-univer.Tasks\\ITUniversity.AspNetCore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Шевнин\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -93,8 +94,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\univer\\it_univer\\It-univer.Tasks\\ItUniversity\\ItUniversity.csproj": {
-              "projectPath": "C:\\univer\\it_univer\\It-univer.Tasks\\ItUniversity\\ItUniversity.csproj"
+            "D:\\Projects\\ItUniver\\it_univer\\It-univer.Tasks\\ItUniversity\\ItUniversity.csproj": {
+              "projectPath": "D:\\Projects\\ItUniver\\it_univer\\It-univer.Tasks\\ItUniversity\\ItUniversity.csproj"
             }
           }
         }
@@ -132,7 +133,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

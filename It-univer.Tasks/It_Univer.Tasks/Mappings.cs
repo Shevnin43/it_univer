@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using It_Univer.Tasks.Core.Entities;
 using It_Univer.Tasks.Web.Models;
+using ITUniversity.Task.API.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,10 @@ namespace It_Univer.Tasks.Web
         {
             CreateMap<TaskCreateModel, TaskBase>();
             CreateMap<TaskBase, TaskCreateModel>();
+
+            CreateMap<ApiCreateModel, TaskBase>();
+            CreateMap<TaskBase, ApiCreateModel>();
+
         }
     }
 }

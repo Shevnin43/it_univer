@@ -1,40 +1,63 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using AutoMapper;
+using It_Univer.Tasks.Core.Entities;
+using It_Univer.Tasks.Managers;
 using ItUniversity.Application.Services;
+using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 
 namespace ITUniversity.Task.API.Services.Imps
 {
     public class TaskAppService : ApplicationService, ITaskAppService
     {
-        public void Test()
-        {
+        private readonly ITaskManager taskManager;
 
+        private readonly IMapper mapper;
+
+        public TaskAppService(ITaskManager taskManager, IMapper mapper)
+        {
+            this.taskManager = taskManager;
+            this.mapper = mapper;
+        }
+        
+        [HttpPost]
+        public ApiCreateModel ApiCreate(ApiCreateModel task)
+        {
+            var entity = mapper.Map<TaskBase>(task);
+            var createdTask= taskManager.Create(entity);
+            return mapper.Map<ApiCreateModel>(createdTask);
         }
 
-        public string GetTest()
+        [HttpPost]
+        public bool ApiRemove(long id)
         {
-            return "aaaaa";
+            return taskManager.Remove(id);
         }
 
-        public void TestString(string str)
+        [HttpPost]
+        public ApiCreateModel ApiUpdate(ApiCreateModel task)
         {
-
+            var entity = mapper.Map<TaskBase>(task);
+            var createdTask = taskManager.Change(entity);
+            return mapper.Map<ApiCreateModel>(createdTask);
         }
 
-        public string GetTestString(string str)
+        [HttpGet]
+        public List<ApiCreateModel> ApiAllTasks()
         {
-            return "aaaaa";
+            var baseTasksList = taskManager.GetAllTasks();
+            var apiTasksList = new List<ApiCreateModel>();
+            foreach (var task in baseTasksList)
+            {
+                apiTasksList.Add(mapper.Map<ApiCreateModel>(task));
+            }
+            return apiTasksList;
         }
 
-        public void Class(Test test)
+        [HttpGet]
+        public ApiCreateModel ApiDetails(long id)
         {
-
-        }
-
-        public Test GetClass(Test test)
-        {
-            return test;
+            var savedTask = taskManager.GetTask(id);
+            return mapper.Map<ApiCreateModel>(savedTask);
         }
     }
 }
