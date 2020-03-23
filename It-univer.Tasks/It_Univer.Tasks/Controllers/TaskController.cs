@@ -56,15 +56,14 @@ namespace It_Univer.Tasks.Web.Controllers
 
         public IActionResult Update(long id)
         {
-            var task = mapper.Map<TaskCreateModel>(taskManager.GetTask(id));
+            var task = mapper.Map<TaskEditModel>(taskManager.GetTask(id));
             return View(task);
         }
 
         [HttpPost]
-        public IActionResult Update(TaskCreateModel task)
+        public IActionResult Update(TaskEditModel task)
         {
-            var saved = taskManager.GetTask(task.Id);
-            var newTask = mapper.Map<TaskBase>(saved);
+            var newTask = mapper.Map<TaskBase>(task);
             taskManager.Change(newTask);
             return RedirectToAction("Index");
         }

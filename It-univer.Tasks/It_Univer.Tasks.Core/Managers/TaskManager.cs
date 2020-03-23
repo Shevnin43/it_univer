@@ -3,47 +3,52 @@ using It_Univer.Tasks.Stores;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using It_Univer.Tasks.Repositories;
+using System.Linq;
 
 namespace It_Univer.Tasks.Managers
 {
     /// <inheritdoc/>
     public class TaskManager : ITaskManager
     {
-        private readonly ITaskStore taskStore;
+        private readonly ITaskRepository taskRepo;
 
-        public TaskManager(ITaskStore taskStore)
+        public TaskManager(ITaskRepository taskRepo)
         {
-            this.taskStore = taskStore;
+            this.taskRepo = taskRepo;
         }
 
         /// <inheritdoc/>
         public TaskBase Create(TaskBase task)
         {
-            return taskStore.Save(task);
+            task.CreationDate = DateTime.Now;
+            task.Status = Enums.TaskStatus.ToDo;
+            return taskRepo.Save(task);
         }
             /// <inheritdoc/>
             public TaskBase Create(string subject)
         {
-            return new TaskBase();
+            var task = new TaskBase { Subject = subject };
+            return taskRepo.Save(task);
         }
 
         public List<TaskBase> GetAllTasks()
         {
-            return taskStore.GetAllTasks();
+            return taskRepo.GetAllTasks();
         }
         
         public bool Remove(long id)
         {
-            return taskStore.Remove(id);
+            return taskRepo.Remove(id);
         }
 
         public TaskBase GetTask(long id)
         {
-            return taskStore.FirstOrDefault(id);
+            return taskRepo.FirstOrDefault(id);
         }
         public TaskBase Change(TaskBase task)
         {
-            return taskStore.Change(task);
+            return taskRepo.Change(task);
         }
     }
 }

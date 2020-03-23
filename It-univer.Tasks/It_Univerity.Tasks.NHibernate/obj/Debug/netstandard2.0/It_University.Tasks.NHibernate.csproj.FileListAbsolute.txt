@@ -1,0 +1,13 @@
+D:\Projects\ItUniver\it_univer\It-univer.Tasks\It_Univerity.Tasks.NHibernate\obj\Debug\netstandard2.0\It_University.Tasks.NHibernate.csprojAssemblyReference.cache
+D:\Projects\ItUniver\it_univer\It-univer.Tasks\It_Univerity.Tasks.NHibernate\obj\Debug\netstandard2.0\It_University.Tasks.NHibernate.AssemblyInfoInputs.cache
+D:\Projects\ItUniver\it_univer\It-univer.Tasks\It_Univerity.Tasks.NHibernate\obj\Debug\netstandard2.0\It_University.Tasks.NHibernate.AssemblyInfo.cs
+D:\Projects\ItUniver\it_univer\It-univer.Tasks\It_Univerity.Tasks.NHibernate\bin\Debug\netstandard2.0\It_University.Tasks.NHibernate.deps.json
+D:\Projects\ItUniver\it_univer\It-univer.Tasks\It_Univerity.Tasks.NHibernate\bin\Debug\netstandard2.0\It_University.Tasks.NHibernate.dll
+D:\Projects\ItUniver\it_univer\It-univer.Tasks\It_Univerity.Tasks.NHibernate\bin\Debug\netstandard2.0\It_University.Tasks.NHibernate.pdb
+D:\Projects\ItUniver\it_univer\It-univer.Tasks\It_Univerity.Tasks.NHibernate\bin\Debug\netstandard2.0\ItUniversity.dll
+D:\Projects\ItUniver\it_univer\It-univer.Tasks\It_Univerity.Tasks.NHibernate\bin\Debug\netstandard2.0\It_Univer.Tasks.Core.dll
+D:\Projects\ItUniver\it_univer\It-univer.Tasks\It_Univerity.Tasks.NHibernate\bin\Debug\netstandard2.0\It_Univer.Tasks.Core.pdb
+D:\Projects\ItUniver\it_univer\It-univer.Tasks\It_Univerity.Tasks.NHibernate\bin\Debug\netstandard2.0\ItUniversity.pdb
+D:\Projects\ItUniver\it_univer\It-univer.Tasks\It_Univerity.Tasks.NHibernate\obj\Debug\netstandard2.0\It_University.Tasks.NHibernate.csproj.CopyComplete
+D:\Projects\ItUniver\it_univer\It-univer.Tasks\It_Univerity.Tasks.NHibernate\obj\Debug\netstandard2.0\It_University.Tasks.NHibernate.dll
+D:\Projects\ItUniver\it_univer\It-univer.Tasks\It_Univerity.Tasks.NHibernate\obj\Debug\netstandard2.0\It_University.Tasks.NHibernate.pdb

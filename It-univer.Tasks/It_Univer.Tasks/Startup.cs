@@ -37,6 +37,7 @@ namespace It_Univer.Tasks
             services.AddAutoMapper(typeof(Startup).Assembly);
             services.AddTaskCoreServices();
             services.AddTaskApplicationServices();
+            services.AddTaskNHibernate(Configuration.GetConnectionString("Default"));
             services.AddCore();
         }
 

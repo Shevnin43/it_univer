@@ -16,6 +16,7 @@
   <ItemGroup>
     <ProjectReference Include="..\ITUniversity.AspNetCore\ITUniversity.AspNetCore.csproj" />
     <ProjectReference Include="..\ITUniversity.Task.API\ITUniversity.Task.API.csproj" />
+    <ProjectReference Include="..\It_Univerity.Tasks.NHibernate\It_University.Tasks.NHibernate.csproj" />
   </ItemGroup>
 
 

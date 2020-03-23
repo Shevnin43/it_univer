@@ -22,42 +22,78 @@ namespace ITUniversity.Task.API.Services.Imps
         [HttpPost]
         public ApiCreateModel ApiCreate(ApiCreateModel task)
         {
-            var entity = mapper.Map<TaskBase>(task);
-            var createdTask= taskManager.Create(entity);
-            return mapper.Map<ApiCreateModel>(createdTask);
+            try
+            {
+                var entity = mapper.Map<TaskBase>(task);
+                var createdTask = taskManager.Create(entity);
+                return mapper.Map<ApiCreateModel>(createdTask);
+            }
+            catch (System.Exception)
+            {
+                return new ApiCreateModel();
+            }
         }
 
         [HttpPost]
         public bool ApiRemove(long id)
         {
-            return taskManager.Remove(id);
+            try 
+            {
+                return taskManager.Remove(id);
+            }
+            catch (System.Exception)
+            {
+                return false;
+            }
         }
 
         [HttpPost]
         public ApiCreateModel ApiUpdate(ApiCreateModel task)
         {
-            var entity = mapper.Map<TaskBase>(task);
-            var createdTask = taskManager.Change(entity);
-            return mapper.Map<ApiCreateModel>(createdTask);
+            try
+            {
+                var entity = mapper.Map<TaskBase>(task);
+                var changedTask = taskManager.Change(entity);
+                return mapper.Map<ApiCreateModel>(changedTask);
+            }
+            catch (System.Exception)
+            {
+                return new ApiCreateModel();   
+            }
+            
         }
 
         [HttpGet]
         public List<ApiCreateModel> ApiAllTasks()
         {
-            var baseTasksList = taskManager.GetAllTasks();
-            var apiTasksList = new List<ApiCreateModel>();
-            foreach (var task in baseTasksList)
+            try
             {
-                apiTasksList.Add(mapper.Map<ApiCreateModel>(task));
+                var baseTasksList = taskManager.GetAllTasks();
+                var apiTasksList = new List<ApiCreateModel>();
+                foreach (var task in baseTasksList)
+                {
+                    apiTasksList.Add(mapper.Map<ApiCreateModel>(task));
+                }
+                return apiTasksList;
             }
-            return apiTasksList;
+            catch (System.Exception)
+            {
+                return null;
+            }
         }
 
         [HttpGet]
         public ApiCreateModel ApiDetails(long id)
         {
-            var savedTask = taskManager.GetTask(id);
-            return mapper.Map<ApiCreateModel>(savedTask);
+            try
+            {
+                var savedTask = taskManager.GetTask(id);
+                return mapper.Map<ApiCreateModel>(savedTask);
+            }
+            catch
+            {
+                return new ApiCreateModel();
+            }
         }
     }
 }
