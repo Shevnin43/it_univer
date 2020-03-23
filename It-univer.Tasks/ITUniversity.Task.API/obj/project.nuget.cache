@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "3lNoGNBgCbhyYW5o5qQoISBm3q0Pca6xXw3HvjvG8RJtOvHxwetBLU4jl8WyXYKYOp47RuHS9udNuO6JT/e7Hw==",
+  "success": true,
+  "projectFilePath": "C:\\univer\\it_univer\\It-univer.Tasks\\ITUniversity.Task.API\\ITUniversity.Task.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Шевнин\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

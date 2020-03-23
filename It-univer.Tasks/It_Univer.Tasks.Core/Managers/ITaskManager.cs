@@ -29,6 +29,6 @@ namespace It_Univer.Tasks.Managers
 
         TaskBase GetTask(long id);
 
-        void Change(TaskBase task);
+        TaskBase Change(TaskBase task);
     }
 }

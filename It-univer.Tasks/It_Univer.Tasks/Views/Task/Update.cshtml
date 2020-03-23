@@ -1,5 +1,5 @@
 ﻿@using It_Univer.Tasks.Web.Models
-@model TaskCreateModel
+@model TaskEditModel
 
 
 <div class="card">
@@ -26,6 +26,7 @@
                         @Html.TextAreaFor(model => model.Description, new { @class = "form-control" })
                     </div>
                     @Html.HiddenFor(model => model.Id)
+                    @Html.HiddenFor(model=>model.CreationDate)
                 </div>
                 <div class="modal-footer">
                     <input type="submit" class="btn btn-success" value="Обновить" />

@@ -22,18 +22,22 @@
                 <a href="@Url.Action("Details", "Task", new { id = Model.Id })">
                     @Model.Subject
                 </a>
-                <span class="@calculateBadgeClass(Model)" style="margin-left: 5px;">
-                    @Model.Status
-                </span>
+                    <span class="@calculateBadgeClass(Model)" style="margin-left: 5px; margin-top: 5px;">
+                        @Model.Status
+                    </span>
             </h5>
             <div style="width: 100%">
                 <span class="material-icons" style="float: right; cursor: pointer; color: orange;"> <a href="@Url.Action("Update", "Task", new {Model.Id })" style="color: orange;">update</a> </span>
-                
+
                 <span class="material-icons" style="float: right; cursor: pointer; color: red;" onclick="task.remove('@Model.Id', this)">
                     delete
                 </span>
             </div>
         </div>
         @Model.Description
+
+        <span class="@calculateBadgeClass(Model)" style="margin-right: 5px; margin-bottom: 5px;">
+            @Model.CreationDate
+        </span>
     </div>
 </div>

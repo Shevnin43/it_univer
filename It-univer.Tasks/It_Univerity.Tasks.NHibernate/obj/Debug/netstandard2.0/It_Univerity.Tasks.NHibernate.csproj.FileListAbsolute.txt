@@ -1,0 +1,4 @@
+D:\Projects\ItUniver\it_univer\It-univer.Tasks\It_Univerity.Tasks.NHibernate\bin\Debug\netstandard2.0\It_Univerity.Tasks.NHibernate.deps.json
+D:\Projects\ItUniver\it_univer\It-univer.Tasks\It_Univerity.Tasks.NHibernate\bin\Debug\netstandard2.0\It_Univerity.Tasks.NHibernate.dll
+D:\Projects\ItUniver\it_univer\It-univer.Tasks\It_Univerity.Tasks.NHibernate\obj\Debug\netstandard2.0\It_Univerity.Tasks.NHibernate.AssemblyInfoInputs.cache
+D:\Projects\ItUniver\it_univer\It-univer.Tasks\It_Univerity.Tasks.NHibernate\obj\Debug\netstandard2.0\It_Univerity.Tasks.NHibernate.AssemblyInfo.cs
