@@ -1,15 +1,14 @@
 ﻿using It_Univer.Tasks.Enums;
+using ItUniversity.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace It_Univer.Tasks.Core.Entities
 {
-    public class TaskBase
-    {   /// <summary>
-        /// АйДи
-        /// </summary>
-        public virtual long Id { get; set; }
+    public class TaskBase : Entity<long>
+    {
+        public const string TableName = "Tasks";
         /// <summary>
         /// Тема
         /// </summary>

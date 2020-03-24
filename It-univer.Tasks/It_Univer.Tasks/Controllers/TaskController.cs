@@ -25,13 +25,13 @@ namespace It_Univer.Tasks.Web.Controllers
             var tasks = taskManager.GetAllTasks();
             return View(tasks);
         }
-        public IActionResult Create()
+        public IActionResult Add()
         {
             return View(TaskCreateModel.New);
         }
 
         [HttpPost]
-        public IActionResult Create(TaskBase task)
+        public IActionResult Create(TaskCreateModel task)
         {
             if (!ModelState.IsValid)
             {
@@ -51,12 +51,12 @@ namespace It_Univer.Tasks.Web.Controllers
         
         public IActionResult Details(long id)
         {
-             return View(taskManager.GetTask(id));
+             return View(taskManager.FirstOrDefault(id));
         }
 
         public IActionResult Update(long id)
         {
-            var task = mapper.Map<TaskEditModel>(taskManager.GetTask(id));
+            var task = mapper.Map<TaskEditModel>(taskManager.FirstOrDefault(id));
             return View(task);
         }
 

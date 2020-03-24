@@ -27,7 +27,7 @@ namespace It_Univer.Tasks.Managers
         List<TaskBase> GetAllTasks();
         bool Remove(long id);
 
-        TaskBase GetTask(long id);
+        TaskBase FirstOrDefault(long id);
 
         TaskBase Change(TaskBase task);
     }

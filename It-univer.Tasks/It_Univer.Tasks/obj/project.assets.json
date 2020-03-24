@@ -2530,6 +2530,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "7.0.0",
           "NHibernate": "5.2.7",
           "System.Data.SqlClient": "4.8.1"
         },
@@ -2544,6 +2545,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "7.0.0",
           "ItUniversity": "1.0.0",
           "System.Data.SqlClient": "4.8.1"
         },
@@ -2562,6 +2564,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "AutoMapper": "9.0.0",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "7.0.0",
           "It_Univer.Tasks.Core": "1.0.0",
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
           "System.Data.SqlClient": "4.8.1"
@@ -2577,6 +2580,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "7.0.0",
           "ItUniversity": "1.0.0",
           "System.ComponentModel.Annotations": "4.7.0",
           "System.Data.SqlClient": "4.8.1"
@@ -2592,6 +2596,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "7.0.0",
           "It_Univer.Tasks.Core": "1.0.0",
           "NHibernate": "5.2.7"
         },

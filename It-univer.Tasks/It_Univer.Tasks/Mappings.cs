@@ -14,13 +14,8 @@ namespace It_Univer.Tasks.Web
         public Mappings()
         {
             CreateMap<TaskCreateModel, TaskBase>();
-            CreateMap<TaskBase, TaskCreateModel>();
-
             CreateMap<TaskEditModel, TaskBase>();
             CreateMap<TaskBase, TaskEditModel>();
-
-            CreateMap<ApiCreateModel, TaskBase>();
-            CreateMap<TaskBase, ApiCreateModel>();
 
         }
     }

@@ -22,7 +22,7 @@ namespace It_Univer.Tasks.Web
     {
         public static IServiceCollection AddTaskCoreServices(this IServiceCollection services)
         {
- //           services.AddSingleton<ITaskStore, TaskMemoryStore>();
+            //services.AddSingleton<ITaskStore, TaskMemoryStore>();
             services.AddScoped<ITaskStore, TaskDbStore>();
             services.AddTransient<ITaskManager, TaskManager>();
 
@@ -57,8 +57,6 @@ namespace It_Univer.Tasks.Web
 
             services.AddSingleton(sessionFactory);
             services.AddScoped(factory => sessionFactory.OpenSession());
-
-            //services.AddScoped<IMapperSession, NHibernateMapperSession>();
 
             services.AddScoped<ITaskRepository, TaskRepository>();
 

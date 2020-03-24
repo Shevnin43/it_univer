@@ -34,7 +34,7 @@ namespace It_Univer.Tasks.Managers
 
         public List<TaskBase> GetAllTasks()
         {
-            return taskRepo.GetAllTasks();
+            return taskRepo.GetAllTasks().ToList();
         }
         
         public bool Remove(long id)
@@ -42,7 +42,7 @@ namespace It_Univer.Tasks.Managers
             return taskRepo.Remove(id);
         }
 
-        public TaskBase GetTask(long id)
+        public TaskBase FirstOrDefault(long id)
         {
             return taskRepo.FirstOrDefault(id);
         }
