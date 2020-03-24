@@ -7,10 +7,10 @@ namespace ItUniversity.Repositories
 {
     public interface IRepository<TEntity> where TEntity : class
     {             
-        TEntity Save(TEntity entity);
+        /*TEntity Save(TEntity entity);
         bool Remove(long id);
         TEntity Change(TEntity entity);
         List<TEntity> GetAllTasks();
-        TEntity FirstOrDefault(long id);
+        TEntity FirstOrDefault(long id);*/
     }
 }

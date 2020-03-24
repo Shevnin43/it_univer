@@ -2,6 +2,7 @@
 using It_Univer.Tasks.Core.Entities;
 using It_Univer.Tasks.Managers;
 using ItUniversity.Application.Services;
+using ITUniversity.Task.API.Services.Dto;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 
@@ -18,82 +19,31 @@ namespace ITUniversity.Task.API.Services.Imps
             this.taskManager = taskManager;
             this.mapper = mapper;
         }
-        
-        [HttpPost]
-        public ApiCreateModel ApiCreate(ApiCreateModel task)
+
+        public TaskDto FirstOrDefault(long id)
         {
-            try
-            {
-                var entity = mapper.Map<TaskBase>(task);
-                var createdTask = taskManager.Create(entity);
-                return mapper.Map<ApiCreateModel>(createdTask);
-            }
-            catch (System.Exception)
-            {
-                return new ApiCreateModel();
-            }
+            var entity = taskManager.FirstOrDefault(id);
+            var dto = mapper.Map<TaskDto>(entity);
+            return dto;
         }
 
-        [HttpPost]
-        public bool ApiRemove(long id)
+        public TaskDto Create(TaskCreateDto task)
         {
-            try 
-            {
-                return taskManager.Remove(id);
-            }
-            catch (System.Exception)
-            {
-                return false;
-            }
+            var entity = mapper.Map<TaskBase>(task);
+            taskManager.Create(entity);
+            return mapper.Map<TaskDto>(entity);
         }
 
-        [HttpPost]
-        public ApiCreateModel ApiUpdate(ApiCreateModel task)
+        public TaskDto Change(TaskUpdateDto task)
         {
-            try
-            {
-                var entity = mapper.Map<TaskBase>(task);
-                var changedTask = taskManager.Change(entity);
-                return mapper.Map<ApiCreateModel>(changedTask);
-            }
-            catch (System.Exception)
-            {
-                return new ApiCreateModel();   
-            }
-            
+            var entity = mapper.Map<TaskBase>(task);
+            taskManager.Change(entity);
+            return mapper.Map<TaskDto>(entity);
         }
 
-        [HttpGet]
-        public List<ApiCreateModel> ApiAllTasks()
+        public bool Remove(long id)
         {
-            try
-            {
-                var baseTasksList = taskManager.GetAllTasks();
-                var apiTasksList = new List<ApiCreateModel>();
-                foreach (var task in baseTasksList)
-                {
-                    apiTasksList.Add(mapper.Map<ApiCreateModel>(task));
-                }
-                return apiTasksList;
-            }
-            catch (System.Exception)
-            {
-                return null;
-            }
-        }
-
-        [HttpGet]
-        public ApiCreateModel ApiDetails(long id)
-        {
-            try
-            {
-                var savedTask = taskManager.GetTask(id);
-                return mapper.Map<ApiCreateModel>(savedTask);
-            }
-            catch
-            {
-                return new ApiCreateModel();
-            }
+            return taskManager.Remove(id);
         }
     }
 }

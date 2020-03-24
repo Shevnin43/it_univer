@@ -19,7 +19,7 @@ namespace It_Univer.Tasks.Stores
         public bool Remove(long id)
         {
 
-            return (taskRepository.Remove(id));
+            return taskRepository.Remove(id);
         }
 
         public TaskBase FirstOrDefault(long id)

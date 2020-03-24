@@ -1,13 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using AutoMapper;
 using It_Univer.Tasks.Web;
 using ITUniversity.AspNetCore.MVC;
+using ITUniversity.Task.API;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -34,10 +30,10 @@ namespace It_Univer.Tasks
                 // Configure a custom converter
                 //options.SerializerOptions.Converters.Add(new MyCustomJsonConverter());
             }).AddRazorRuntimeCompilation();
-            services.AddAutoMapper(typeof(Startup).Assembly);
-            services.AddTaskCoreServices();
-            services.AddTaskApplicationServices();
-            services.AddTaskNHibernate(Configuration.GetConnectionString("Default"));
+            services.AddAutoMapper(typeof(Startup).Assembly, typeof(TaskApplicationModule).Assembly);
+            services.AddTaskCoreServices()
+                .AddTaskApplicationServices()
+                .AddTaskNHibernate(Configuration.GetConnectionString("Default"));
             services.AddCore();
         }
 

@@ -3,33 +3,18 @@ using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 using ItUniversity.Application.Services;
+using ITUniversity.Task.API.Services.Dto;
 
 namespace ITUniversity.Task.API.Services
 {
     public interface ITaskAppService : IApplicationService
     {
-        ApiCreateModel ApiCreate(ApiCreateModel task);
-        bool ApiRemove(long id);
-        ApiCreateModel ApiUpdate(ApiCreateModel task);
-        List<ApiCreateModel> ApiAllTasks();
-        ApiCreateModel ApiDetails(long id);
+        TaskDto Create(TaskCreateDto task);
 
+        TaskDto Change(TaskUpdateDto task);
+
+        bool Remove(long id);
+
+        TaskDto FirstOrDefault(long id);
     }
-
-        public class ApiCreateModel
-        {
-            public static ApiCreateModel New
-            {
-                get { return new ApiCreateModel(); }
-            }
-
-            [Required(ErrorMessage = "Заполните поле:")]
-            [DisplayName("Тема")] 
-            public string Subject { get; set; }
-
-            [DisplayName("Описание")]
-            public string Description { get; set; }
-
-            public long Id { get; set; }
-        }
 }
