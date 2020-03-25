@@ -8,9 +8,11 @@ using It_Univer.Tasks.Models;
 using It_Univer.Tasks.Stores;
 using It_Univer.Tasks.Core.Entities;
 using It_Univer.Tasks.Enums;
+using Microsoft.AspNetCore.Authorization;
 
 namespace It_Univer.Tasks.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> logger;

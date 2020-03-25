@@ -1057,3 +1057,6 @@ D:\Projects\ItUniver\it_univer\It-univer.Tasks\It_Univer.Tasks\bin\Debug\netcore
 D:\Projects\ItUniver\it_univer\It-univer.Tasks\It_Univer.Tasks\bin\Debug\netcoreapp3.1\It_University.Tasks.NHibernate.dll
 D:\Projects\ItUniver\it_univer\It-univer.Tasks\It_Univer.Tasks\bin\Debug\netcoreapp3.1\It_University.Tasks.NHibernate.pdb
 D:\Projects\ItUniver\it_univer\It-univer.Tasks\It_Univer.Tasks\obj\Debug\netcoreapp3.1\Razor\Views\Task\Add.cshtml.g.cs
+D:\Projects\ItUniver\it_univer\It-univer.Tasks\It_Univer.Tasks\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
+D:\Projects\ItUniver\it_univer\It-univer.Tasks\It_Univer.Tasks\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
+D:\Projects\ItUniver\it_univer\It-univer.Tasks\It_Univer.Tasks\obj\Debug\netcoreapp3.1\Razor\Views\User\Index.cshtml.g.cs
