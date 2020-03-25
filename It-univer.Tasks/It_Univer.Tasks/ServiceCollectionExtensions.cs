@@ -25,6 +25,7 @@ namespace It_Univer.Tasks.Web
             //services.AddSingleton<ITaskStore, TaskMemoryStore>();
             services.AddScoped<ITaskStore, TaskDbStore>();
             services.AddTransient<ITaskManager, TaskManager>();
+            services.AddTransient<IUserAppService, UserAppService>();
 
             return services;
         }
@@ -59,6 +60,8 @@ namespace It_Univer.Tasks.Web
             services.AddScoped(factory => sessionFactory.OpenSession());
 
             services.AddScoped<ITaskRepository, TaskRepository>();
+
+            services.AddScoped<IUserRepository, UserRepository>();
 
             return services;
         }

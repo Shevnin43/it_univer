@@ -4,10 +4,12 @@ using It_Univer.Tasks.Core.Entities;
 using It_Univer.Tasks.Enums;
 using It_Univer.Tasks.Managers;
 using It_Univer.Tasks.Web.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace It_Univer.Tasks.Web.Controllers
 {
+    [Authorize]
     public class TaskController : Controller
     {
         private readonly ITaskManager taskManager;
