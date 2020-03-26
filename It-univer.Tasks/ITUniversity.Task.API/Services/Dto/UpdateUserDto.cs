@@ -4,21 +4,12 @@ using System.Text;
 
 namespace ITUniversity.Task.API.Services.Dto
 {
-    public class UserDto
+    public class UpdateUserDto
     {
         /// <summary>
         /// Идентификатор
         /// </summary>
         public int Id
-        {
-            get;
-            set;
-        }
-
-        /// <summary>
-        /// Логин
-        /// </summary>
-        public string Login
         {
             get;
             set;
@@ -35,7 +26,7 @@ namespace ITUniversity.Task.API.Services.Dto
         /// <summary>
         /// Роль
         /// </summary>
-        public RoleDto Role
+        public int? Role
         {
             get;
             set;

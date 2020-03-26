@@ -14,3 +14,4 @@ D:\Projects\ItUniver\it_univer\It-univer.Tasks\ItUniversity\obj\Debug\netstandar
 D:\Projects\ItUniver\it_univer\It-univer.Tasks\ItUniversity\obj\Debug\netstandard2.0\ItUniversity.AssemblyInfo.cs
 D:\Projects\ItUniver\it_univer\It-univer.Tasks\ItUniversity\obj\Debug\netstandard2.0\ItUniversity.dll
 D:\Projects\ItUniver\it_univer\It-univer.Tasks\ItUniversity\obj\Debug\netstandard2.0\ItUniversity.pdb
+D:\Projects\ItUniver\it_univer\It-univer.Tasks\ItUniversity\obj\Debug\netstandard2.0\ItUniversity.csprojAssemblyReference.cache

@@ -19,6 +19,7 @@ namespace It_Univer.Tasks.Web
             CreateMap<TaskEditModel, TaskBase>();
             CreateMap<TaskBase, TaskEditModel>();
             CreateMap<RegisterModel, CreateUserDto>();
+            CreateMap<UserDto, UserEditModel>();
 
         }
     }

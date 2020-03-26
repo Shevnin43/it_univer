@@ -1060,3 +1060,5 @@ D:\Projects\ItUniver\it_univer\It-univer.Tasks\It_Univer.Tasks\obj\Debug\netcore
 D:\Projects\ItUniver\it_univer\It-univer.Tasks\It_Univer.Tasks\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
 D:\Projects\ItUniver\it_univer\It-univer.Tasks\It_Univer.Tasks\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
 D:\Projects\ItUniver\it_univer\It-univer.Tasks\It_Univer.Tasks\obj\Debug\netcoreapp3.1\Razor\Views\User\Index.cshtml.g.cs
+D:\Projects\ItUniver\it_univer\It-univer.Tasks\It_Univer.Tasks\obj\Debug\netcoreapp3.1\Razor\Views\Account\AccessDenied.cshtml.g.cs
+D:\Projects\ItUniver\it_univer\It-univer.Tasks\It_Univer.Tasks\obj\Debug\netcoreapp3.1\Razor\Views\User\Edit.cshtml.g.cs
