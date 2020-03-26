@@ -16,6 +16,7 @@ namespace ITUniversity.Task.API.Services.Dto
             CreateMap<TaskUpdateDto, TaskBase>();
             CreateMap<CreateUserDto, User>();
             CreateMap<User, UserDto>();
+            CreateMap<Role, RoleDto>();
 
         }
     }

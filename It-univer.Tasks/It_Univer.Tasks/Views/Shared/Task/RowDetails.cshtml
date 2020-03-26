@@ -1,17 +1,18 @@
-﻿@using It_Univer.Tasks.Core.Entities
+﻿@using ITUniversity.Task.API.Services.Dto
+@using TaskStatus = It_Univer.Tasks.Enums.TaskStatus
 
 
-@model TaskBase
+@model TaskDto
 
 @{
-    Func<TaskBase, string> calculateCardTitleStyle = task =>
+    Func<TaskDto, string> calculateCardTitleStyle = task =>
     {
         return $"display: flex;{(string.IsNullOrWhiteSpace(task.Description) ? " margin-bottom: 0px;" : "")}";
     };
 
-    Func<TaskBase, string> calculateBadgeClass = task =>
+    Func<TaskDto, string> calculateBadgeClass = task =>
     {
-        return $"badge badge-{(task.Status == It_Univer.Tasks.Enums.TaskStatus.ToDo ? "primary" : "success")}";
+        return $"badge badge-{(task.Status == It_Univer.Tasks.Enums.TaskStatus.ToDo ? "primary" : "danger")}";
     };
 }
 

@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace It_Univer.Tasks.Web.Controllers
 {
-    [Authorize]
+    [Authorize(Roles ="admin , user")]
     public class TaskController : Controller
     {
         private readonly ITaskManager taskManager;

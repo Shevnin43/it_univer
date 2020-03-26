@@ -2,6 +2,7 @@
 using It_Univer.Tasks.Entities;
 using It_Univer.Tasks.Repositories;
 using ITUniversity.Task.API.Services.Dto;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,16 +15,18 @@ namespace ITUniversity.Task.API.Services.Imps
         private readonly IUserRepository userRepository;
 
         private readonly IMapper mapper;
+        private readonly IRoleRepository roleRepository;
 
         /// <summary>
         /// Инициализировать экземпляр <see cref="UserAppService"/>
         /// </summary>
         /// <param name="userRepository">Репозиторий пользователей</param>
         /// <param name="mapper">Маппер</param>
-        public UserAppService(IUserRepository userRepository, IMapper mapper)
+        public UserAppService(IUserRepository userRepository, IMapper mapper, IRoleRepository roleRepository)
         {
             this.userRepository = userRepository;
             this.mapper = mapper;
+            this.roleRepository = roleRepository;
         }
 
         public bool Block(int id)
@@ -68,5 +71,20 @@ namespace ITUniversity.Task.API.Services.Imps
             var entity = userRepository.FirstOrDefault(dto.Id);
             return entity.Password == password;
         }
+
+        public UserDto Get(int id)
+        {
+            var entity = userRepository.FirstOrDefault(id);
+            return mapper.Map<UserDto>(entity);
+        }
+
+        public UserDto Update(UpdateUserDto dto)
+        {
+            var entry = userRepository.FirstOrDefault(dto.Id);
+            entry.Email = dto.Email;
+            entry.Role = dto.Role.HasValue ? roleRepository.FirstOrDefault(dto.Role.Value) : null;
+            return null;
+        }
+
     }
 }

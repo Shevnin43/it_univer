@@ -37,5 +37,14 @@ namespace ITUniversity.Task.API.Services
         ICollection<UserDto> GetAll();
 
         bool Block(int id);
+
+        UserDto Get(int id);
+        
+        /// <summary>
+        /// Обновить пользователя
+        /// </summary>
+        /// <param name="dto"></param>
+        /// <returns></returns>
+        UserDto Update(UpdateUserDto dto);
     }
 }

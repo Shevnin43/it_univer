@@ -1,10 +1,12 @@
-﻿using System;
+﻿using ITUniversity.Task.API.Services.Dto;
+using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace ITUniversity.Task.API.Services.Dto
+namespace It_Univer.Tasks.Web.Models
 {
-    public class UserDto
+    public class UserEditModel
     {
         /// <summary>
         /// Идентификатор
@@ -32,10 +34,11 @@ namespace ITUniversity.Task.API.Services.Dto
             get;
             set;
         }
+
         /// <summary>
         /// Роль
         /// </summary>
-        public RoleDto Role
+        public int? Role
         {
             get;
             set;
